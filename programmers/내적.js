@@ -1,0 +1,1 @@
+const solution = (a, b) => a.reduce((acc, num, index) => acc += num * b[index], 0);
