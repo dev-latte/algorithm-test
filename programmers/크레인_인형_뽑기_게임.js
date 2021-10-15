@@ -1,4 +1,4 @@
-function solution(board, moves) {
+const solution = (board, moves) => {
     let count = 0;
     let basket = [];
     moves.forEach(move => {
@@ -6,7 +6,7 @@ function solution(board, moves) {
             let block = board[i][move-1];
             if(block !== 0) {
                 if (basket[basket.length-1] !== block) {
-                    basket.push(block)
+                    basket.push(block);
                 } else {
                     basket.pop(block);
                     count += 2;                    
